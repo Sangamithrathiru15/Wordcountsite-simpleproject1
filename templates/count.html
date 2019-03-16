@@ -1,0 +1,13 @@
+<h1>COUNTING</h1>
+<h1>Your text is</h1>
+{{text}}
+<h2>Finally!!the count is </h2>
+{{textlen}}
+<br />
+<form action="{% url 'home' %}">
+    <input type="submit" value="Back to Home">
+<br />
+{%for txt,ct in sorteddict%}
+{{txt}}--{{ct}}
+<br />
+{% endfor %}
